@@ -1,7 +1,6 @@
 var http = require('http');
 
 var server = new http.Server(function(req, res) {
-  console.log(req.headers);
   var ipaddress, lang, software;
   var head = req.headers;
   lang = head["accept-language"].match(/([^,]*),/)[1];
